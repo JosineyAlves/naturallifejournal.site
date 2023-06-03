@@ -124,7 +124,21 @@ a:focus,
   );
   color: #fff;
 }
+.pulsing {
+  animation-name: pulsing;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
 
+@keyframes pulsing {
+  0% {
+      box-shadow: 0 0 0 0 #2a8d2e
+  }
+  80% {
+      box-shadow: 0 0 0 12px #00ff1700
+  }
+}
 /** FOOTER **/
 .footer p {
   font-size: 16px;
