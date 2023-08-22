@@ -323,7 +323,7 @@
                </style>
                <div class="description-slfnYb8772352-element ">
                   <h3>
-                    ¡Espera un momento!
+                     ¡Espera un momento!
                   </h3>
                </div>
             </div>
@@ -375,7 +375,7 @@
                </style>
                <div class="headline-cgoCmJ8850752-element headline">
                   <h1>
-                    Tu pedido aún no está completo...<br>
+                     Tu pedido aún no está completo...<br>
                   </h1>
                </div>
             </div>
@@ -406,7 +406,7 @@
                </style>
                <div class="headline-QrdEmx9112592-element headline">
                   <h1>
-                    ¡No cierres esta página y mira este breve vídeo!
+                     ¡No cierres esta página y mira este breve vídeo!
                   </h1>
                </div>
             </div>
@@ -421,12 +421,48 @@
                }
             </style>
             <!-- VSL -->
-            <div id="vid_64e42f6502d65b000a082b29" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64e42f6502d65b000a082b29" src="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e42f6502d65b000a082b29/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64e42f6502d65b000a082b29" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64e42f6502d65b000a082b29">var s=document.createElement("script");s.src="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e42f6502d65b000a082b29/player.js",s.async=!0,document.head.appendChild(s);</script>
-            <!-- VSL -->
-         </div>
-       </div>
+            <div id="vid_64e42f6502d65b000a082b29" style="position:relative;width:100%;padding: 56.25% 0 0;"><img id="thumb_64e42f6502d65b000a082b29" src="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e42f6502d65b000a082b29/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64e42f6502d65b000a082b29" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64e42f6502d65b000a082b29">var s=document.createElement("script");s.src="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e42f6502d65b000a082b29/player.js",s.async=!0,document.head.appendChild(s);</script>            <!-- VSL -->
+            <br>
       </div>
-    </div>
+      </div>
+      </div>
+      </div>
+      <div id="division-RkYytd88538352" class="esconder">
+         <style>
+            #division-RkYytd88538352 {
+            position:relative;
+            padding: 3vh 20vw 3vh 20vw;
+            align-items: center;
+            align-content: center;
+            background-color: #191919;
+            }
+            @media (max-width:1200px) {
+            #division-RkYytd88538352 {
+            padding: 1.5vh 10vw 1.5vh 10vw;
+            }
+            }
+            @media (max-width:600px) {
+            #division-RkYytd88538352 {
+            padding: 1.5vh 1.5vw 1.5vh 1.5vw;
+            }
+            }
+         </style>
+         <!-- HOTMART - Upsell Widget -->
+         <div class="division-RkYytd88538352" id="box_hotmart"></div>
+         <script src="https://pay.hotmart.com/assets/js/hotmart.upsell_checkout.js"></script>
+         <script>
+            opts = {
+            key: 'USL-111294-344292-c8880af2304860ce0131ffd0c2fa8438',
+            width: '650' ,
+            height: '420'
+            };
+            Upsell.Widget.show(opts);
+         </script>
+         <!-- HOTMART - Upsell Widget [end] -->
+      </div>
+      </div>
+      </div>
+      </div>
       <div class="division-1657814825221__wrapper">
       <style>
          #division-1657814825221 {
@@ -434,7 +470,6 @@
          padding: 4vh 20vw 4vh 20vw;
          background-color: #1b2630;
          margin-top: 5vh;
-
          }
          @media (max-width:1200px) {
          #division-1657814825221 {
@@ -489,49 +524,48 @@
          </div>
       </footer>
       <style>.esconder { display: none }</style>
-
-<script type="text/javascript">
-document.addEventListener("DOMContentLoaded", function() {
-/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
-var SECONDS_TO_DISPLAY = 10;
-var CLASS_TO_DISPLAY = ".esconder";
-
-/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
-var attempts = 0;
-var elsHiddenList = [];
-var elsDisplayed = false;
-var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
-var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
-var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
-
-setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
-
-var showHiddenElements = function () {
-elsDisplayed = true;
-elsHiddenList.forEach((e) => e.style.display = "block");
-localStorage.setItem(alreadyDisplayedKey, true)
-}
-
-var startWatchVideoProgress = function () {
-if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
-if (attempts >= 10) return;
-attempts += 1;
-return setTimeout(function () { startWatchVideoProgress() }, 1000);
-}
-
-smartplayer.instances[0].on('timeupdate', () => {
-if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
-if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
-showHiddenElements();
-})
-}
-
-if (alreadyElsDisplayed === 'true') {
-setTimeout(function () { showHiddenElements(); }, 100);
-} else {
-startWatchVideoProgress()
-}
-});
-</script>
+      <script type="text/javascript">
+         document.addEventListener("DOMContentLoaded", function() {
+         /* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+         var SECONDS_TO_DISPLAY = 225;
+         var CLASS_TO_DISPLAY = ".esconder";
+         
+         /* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+         var attempts = 0;
+         var elsHiddenList = [];
+         var elsDisplayed = false;
+         var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+         var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+         var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+         
+         setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+         
+         var showHiddenElements = function () {
+         elsDisplayed = true;
+         elsHiddenList.forEach((e) => e.style.display = "block");
+         localStorage.setItem(alreadyDisplayedKey, true)
+         }
+         
+         var startWatchVideoProgress = function () {
+         if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+         if (attempts >= 10) return;
+         attempts += 1;
+         return setTimeout(function () { startWatchVideoProgress() }, 1000);
+         }
+         
+         smartplayer.instances[0].on('timeupdate', () => {
+         if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+         if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+         showHiddenElements();
+         })
+         }
+         
+         if (alreadyElsDisplayed === 'true') {
+         setTimeout(function () { showHiddenElements(); }, 100);
+         } else {
+         startWatchVideoProgress()
+         }
+         });
+      </script>
    </body>
 </html>
