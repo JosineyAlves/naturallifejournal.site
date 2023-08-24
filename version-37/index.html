@@ -465,13 +465,25 @@
                     padding: 20vh 3vw 0.001vh 3vw;
                 }
             }
+    
+            .link-texto-centralizado {
+                text-align: center;
+                margin-top: 2vh;
+                
+            }
+    
+            .link-texto-centralizado a {
+                color: #ffffff;
+                text-decoration: underline;
+                font-weight: 300;
+
+            }
         </style>
         <div id="division-1657813536866" class="uucpHm8171582">
-
             <!-- VSL -->
             <div id="vid_64e69010fc6f580009275af6" style="position:relative;width:100%;padding: 56.25% 0 0;box-shadow: 0 0 14px 4px rgba(255, 255, 255, .27);"><img id="thumb_64e69010fc6f580009275af6" src="https://images.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e69010fc6f580009275af6/thumbnail.jpg" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;display:block;"><div id="backdrop_64e69010fc6f580009275af6" style="position:absolute;top:0;width:100%;height:100%;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);"></div></div><script type="text/javascript" id="scr_64e69010fc6f580009275af6">var s=document.createElement("script");s.src="https://scripts.converteai.net/528ac277-8029-4ec6-a3db-8da993dd5d9a/players/64e69010fc6f580009275af6/player.js",s.async=!0,document.head.appendChild(s);</script>
             <!-- VSL -->
-
+    
             <div class="description-16578141835486qxbNr">
                 <style>
                     .description-16578141835486qxbNr-element h3 {
@@ -499,6 +511,12 @@
                         }
                     }
                 </style>
+    
+                <!-- Adicionado o texto com link sublinhado e centralizado -->
+                <div class="link-texto-centralizado esconder">
+                    <a href="https://pay.hotmart.com/N78509837S?off=l47q9rnu&checkoutMode=10&sck=fbcarrito">Añadir al carrito</a>
+                </div>
+    
                 <div class="description-16578141835486qxbNr-element ">
                     <h3>
                         🎧 Asegúrate de que el sonido esté encendido.
@@ -506,8 +524,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
+    </div>    
     <div class="division-jhHYto4486005__wrapper">
         <style>
             #division-jhHYto4486005 {
@@ -770,7 +787,51 @@
             $('.navebar_main').fadeIn(300);
         }
     </script>
+<style>.esconder { display: none }</style>
 
+<script type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+var SECONDS_TO_DISPLAY = 1266;
+var CLASS_TO_DISPLAY = ".esconder";
+
+/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+var attempts = 0;
+var elsHiddenList = [];
+var elsDisplayed = false;
+var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+var alreadyDisplayedKey =`alreadyElsDisplayed${SECONDS_TO_DISPLAY}`
+var alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+
+setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+
+var showHiddenElements = function () {
+elsDisplayed = true;
+elsHiddenList.forEach((e) => e.style.display = "block");
+localStorage.setItem(alreadyDisplayedKey, true)
+}
+
+var startWatchVideoProgress = function () {
+if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+if (attempts >= 10) return;
+attempts += 1;
+return setTimeout(function () { startWatchVideoProgress() }, 1000);
+}
+
+smartplayer.instances[0].on('timeupdate', () => {
+if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+showHiddenElements();
+})
+}
+
+if (alreadyElsDisplayed === 'true') {
+setTimeout(function () { showHiddenElements(); }, 100);
+} else {
+startWatchVideoProgress()
+}
+});
+</script>
 </body>
 
 </html>
