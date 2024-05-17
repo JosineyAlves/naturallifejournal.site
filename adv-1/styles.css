@@ -18,28 +18,23 @@ body {
 .container {
     background-color: #fff;
     /* Branco */
-    margin: 20px auto;
+    margin: 30px auto;
     /* Centraliza horizontalmente */
     padding: 20px;
     border-radius: 10px;
-    max-width: 90%;
+    max-width: 70%;
     /* Largura máxima de 80% da tela */
     text-align: center;
     /* Centraliza todo o conteúdo */
 }
 
-header {
-    margin-bottom: 20px;
-    max-width: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-header h1 {
+h1 {
     font-size: 35px;
     font-weight: 800;
     color: #0e0e0e;
     text-align: center;
+    margin: 30px 50px 0px 50px;
+
 }
 
 .content {
@@ -61,11 +56,11 @@ input[type="file"] {
 
 a.watch-now-btn {
     display: inline-block;
-    width: 80%;
+    width: 5px auto;
     /* Ocupa toda a largura do container */
     background-color: rgb(221, 21, 21);
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-radius: 10px;
     font-size: 25px;
     cursor: pointer;
@@ -87,7 +82,7 @@ a.watch-now-btn {
 footer {
     text-align: center;
     margin-top: 50px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-bottom: 20px;
     border-top: 1px solid #333;
 }
@@ -106,20 +101,12 @@ footer .disclaimer {
     color: #333;
 }
 
-footer .footer-links {
+footer .footer-links a{
     margin-top: 10px;
     font-size: 14px;
     color: #333;
-    font-weight: 500;
-}
-
-footer .footer-links a {
+    font-weight: 100;
     text-decoration: none;
-    color: #333;
-}
-
-footer .footer-links a:hover {
-    text-decoration: underline;
 }
 
 .highlight-link {
@@ -154,6 +141,8 @@ footer .footer-links a:hover {
 @media (max-width: 576px) {
     .container {
         padding: 10px;
+        max-width: 90%;
+
         /* Reduzindo o padding para telas menores */
     }
     a.watch-now-btn {
@@ -170,6 +159,10 @@ footer .footer-links a:hover {
         margin: 15px 10px 15px 10px;
         /* Reduzindo o tamanho da fonte dos textos */
     }
+    .container h1 {
+        font-size: 28px;
+        margin: 15px 10px 15px 10px;
+    
 }
 
 
