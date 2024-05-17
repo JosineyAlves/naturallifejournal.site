@@ -15,7 +15,7 @@ function startCountdown() {
         // Verifica se o tempo acabou
         if (timeLeft === 0) {
             clearInterval(countdownInterval);
-            timerElement.textContent = 'Time\'s up!';
+            timerElement.textContent = '¡El tiempo acabó!';
         } else {
             timeLeft--; // Decrementa o tempo restante
         }
